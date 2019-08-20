@@ -51,6 +51,9 @@ h2 {
     font-size: 30px;
     text-align: center;
 }
+a {
+    text-decoration: none;
+}
 .btn-red {
     height: 65px;
     width: 300px;
@@ -79,12 +82,13 @@ header ul li {
     list-style: none;
     font-size: 16px;
     font-family: ProximaNovaBold;
+    margin-right: 25px;
 }
 header ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 a {
@@ -448,4 +452,136 @@ header {
     background: url(../img/advantage/4.png) no-repeat center center;
     position: relative;
     top: 4px;
+}
+/* Section Apps */
+#apps {
+    min-height: 470px;
+    background: url(../img/apps/apps-background.jpg) no-repeat center center;
+    color: #fff;
+    font-family: MullerLight;
+    background-size: cover;
+}
+#apps h2 {
+    text-align: left;
+    font-family: MullerBold;
+}
+.section-apps_wrap { 
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.section-apps_wrap p {
+    margin-top: 80px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.section-apps_wrap p span {
+    color: #e41e1e;
+    font-family: MullerMedium;
+    margin-right: 15px;
+}
+.section-apps_download img {
+    margin-top: 40px;
+}
+/* Section Comments */
+#comments {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f5f5f5;
+}
+.section-comments_wrap {
+    margin-top: 80px;    
+}
+.section-comments_wrap ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.section-comments_wrap ul li {
+    list-style: none;
+    color: #313131;
+    font-family: MullerMedium;
+    text-transform: uppercase;
+    align-self: center;
+}
+.section-comments_wrap ul li a {
+    color: #313131;
+    padding-left: 12px;
+    padding-top: 11px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+.section-comments_wrap ul li a.active {
+    border: 2px solid #e41e1e;
+    color: #e41e1e;
+    border-radius: 5px;
+}
+.section-comments_wrap ul li a:hover {
+    color: #e41e1e;
+}
+.comments-tab_content {
+    margin-top: 70px;
+}
+/* Slider Comments */
+.item {
+    min-height: 260px;
+}
+.item a {
+    color: #313131;
+    font-family: MullerLight;
+    font-size: 14px;
+}
+.item a:hover {
+    color: #e41e1e;
+    text-decoration: underline;
+}
+.item p {
+    margin-top: 20px;
+}
+/* Section Partners */
+/* #first, #services, #about, #turn, #advantage, #apps, #comments {
+    display: none;
+} */
+#partners {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-partners_wrap {
+    margin-top: 90px;
+}
+.item-partner {
+    min-height: 170px;
+    transition: all .3s;
+}
+.partner-info {
+    min-height: 170px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+    background-color: rgb(38, 184, 58);
+    box-shadow: 0px 10px 10px 0px rgba(38, 184, 58, 0.2);  
+}
+.partner-info p {
+    color: #fff;
+    font-size: 13px;
+    font-family: MullerLight;
+    text-align: center;
+    padding: 20px;
+}
+.owl-prev span {
+    top: 30px !important;
+}
+.owl-next span {
+    top: 30px !important;
 }

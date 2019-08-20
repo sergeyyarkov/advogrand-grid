@@ -1,3 +1,21 @@
+@media (max-width: 990px) {
+    header ul li {
+        margin-right: 15px;
+    }
+}
+@media (max-width: 920px) {
+    header ul li {
+        margin-right: 5px;
+    }
+}
+@media (max-width: 900px) {
+    #apps .section-apps_wrap {
+        grid-template-columns: 1fr;
+    }
+    #apps .section-apps_download {
+        text-align: center;
+    }
+}
 @media (max-width: 870px) {
     #about .section-about_wrap {
         grid-template-columns: 1fr 1fr;
@@ -38,9 +56,30 @@
     #first {
         padding-top: 60px;
     }
+    
+}
+@media(min-width: 861px) {
+    header .header-content_top {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #f4f4f4;
+        background-color: #fff;
+        z-index: 999;
+    }
+    header .header-content_bottom {
+        margin-top: 70px;
+    }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 775px) {
     .section-services_wrap {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 120px;
@@ -58,7 +97,17 @@
         margin-top: 40px;
     }
 }
-
+@media(max-width: 655px) {
+    #comments .section-comments_wrap ul {
+        display: block;
+        padding: 0;
+    }
+    #comments .section-comments_wrap ul li {
+        margin-top: 35px;
+        display: inline-block;
+        text-align: center;
+    }
+}
 @media (max-width: 620px) {
     #advantage .section-advantage_wrap .advantage-cards {
         grid-template-columns: 1fr 1fr;
@@ -113,7 +162,11 @@
         padding-right: 0;
     }
 }
-
+@media (max-width: 446px) {
+    .section-apps_download img {
+        margin-top: 20px;
+    }
+}
 @media (max-width: 360px) {
     #first .section-first_wrap h1 {
         font-size: 28px;
