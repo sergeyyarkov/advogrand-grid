@@ -1,15 +1,67 @@
+@media (max-width: 1030px) {
+    #contacts .contact-info_content {
+        padding-left: 100px;
+    }
+
+    #contacts .contact-form_wrap {
+        padding-right: 50px;
+        padding-left: 50px;
+        justify-self: stretch;
+    }
+
+    #contacts .section-contacts_wrap {
+        grid-column-gap: 0px;
+        grid-template-columns: 1fr;
+    }
+
+    #contacts .contact-info_content {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    footer .footer-logo {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    header .wrap-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    header .header-content_top {
+        display: none;
+    }
+
+    header .header-content {
+        padding-top: 10px;
+    }
+}
+
 @media (max-width: 990px) {
     header ul li {
         margin-right: 15px;
     }
 }
 
+@media(max-width: 950px) {
+    #price .card-tariff {
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-row-gap: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 @media (max-width: 930px) {
-    #price .section-price_wrap {
+    #price .compare {
         grid-template-columns: 1fr 1fr;
     }
 
-    #price .section-price_wrap div:nth-child(3) {
+    #price .compare div:nth-child(3) {
         grid-column: 1/3;
     }
 }
@@ -71,6 +123,10 @@
         padding-top: 60px;
     }
 
+    header .header-content {
+        padding-top: 80px;
+    }
+
 }
 
 @media(min-width: 861px) {
@@ -123,10 +179,11 @@
 }
 
 @media (max-width: 670px) {
-    #price .section-price_wrap {
+    #price .compare {
         grid-template-columns: 1fr;
     }
-    #price .section-price_wrap div:nth-child(3) {
+
+    #price .compare div:nth-child(3) {
         grid-column: 1;
     }
 }
@@ -161,6 +218,11 @@
 
     #first .section-first_wrap h1 {
         font-size: 30px;
+    }
+
+    #contacts .contact-form_wrap {
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 
@@ -202,6 +264,15 @@
 @media (max-width: 446px) {
     .section-apps_download img {
         margin-top: 20px;
+    }
+
+    main .modal {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    main .modal-close {
+        left: 0;
     }
 }
 
