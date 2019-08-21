@@ -54,6 +54,31 @@ h2 {
 a {
     text-decoration: none;
 }
+/* Fade Animation */
+.fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 .btn-red {
     height: 65px;
     width: 300px;
@@ -69,7 +94,38 @@ a {
 }
 .btn-red:hover {
     background-color: #d15252;
+}
+.btn-orange, .btn-green, .btn-blue, .btn-grey {
+    width: 100%;
+    margin-top: 15px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: MullerBold;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-orange {
+    background: -moz-linear-gradient( 90deg, rgb(255,46,0) 0%, rgb(255,76,37) 100%);
+    background: -webkit-linear-gradient( 90deg, rgb(255,46,0) 0%, rgb(255,76,37) 100%);
+    background: -ms-linear-gradient( 90deg, rgb(255,46,0) 0%, rgb(255,76,37) 100%);
+}
+.btn-grey {
+    background-color: #9a9a9a;
+}
+.btn-green {
+    background: -moz-linear-gradient( 90deg, rgb(0,142,0) 0%, rgb(0,163,0) 100%);
+    background: -webkit-linear-gradient( 90deg, rgb(0,142,0) 0%, rgb(0,163,0) 100%);
+    background: -ms-linear-gradient( 90deg, rgb(0,142,0) 0%, rgb(0,163,0) 100%);
+}
+.btn-blue {
+    background: -moz-linear-gradient( 90deg, rgb(0,28,103) 0%, rgb(2,56,143) 100%);
+    background: -webkit-linear-gradient( 90deg, rgb(0,28,103) 0%, rgb(2,56,143) 100%);
+    background: -ms-linear-gradient( 90deg, rgb(0,28,103) 0%, rgb(2,56,143) 100%);  
 } 
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -544,9 +600,7 @@ header {
     margin-top: 20px;
 }
 /* Section Partners */
-/* #first, #services, #about, #turn, #advantage, #apps, #comments {
-    display: none;
-} */
+
 #partners {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -577,11 +631,127 @@ header {
     font-size: 13px;
     font-family: MullerLight;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
-.owl-prev span {
+.section-partners_wrap .owl-prev span {
     top: 30px !important;
 }
-.owl-next span {
+.section-partners_wrap .owl-next span {
     top: 30px !important;
 }
+/* Section Price */
+#price {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f5f5f5;
+}
+#price h2 {
+    text-align: left;
+    font-family: MullerBold;
+    font-size: 30px;
+    color: #313131;
+}
+ #price .about-card p {
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: left;
+    font-family: MullerBold;
+    color: #313131;
+} 
+ #price .choose-title p {
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: left;
+    font-family: MullerLight;
+    color: #313131;
+} 
+.choose-card {
+    display: flex;
+    justify-content: space-between;
+}
+.tabs-card {
+    align-self: flex-end;
+}
+.tabs-card a {
+    color: #313131;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: MullerMedium;
+    margin-right: 15px;
+    padding: 10px;
+}
+.tabs-card a:hover {
+    color: #e42626;
+}
+.tabs-card a.active {
+    border: 2px solid #e42626;
+    border-radius: 5px;
+}
+.section-price_wrap {
+    margin-top: 40px;
+}
+.card-title h3 {
+    font-family: MullerLight;
+    font-size: 20px;
+}
+.card-title h3 span {
+    color: #000;
+    font-family: MullerBold;
+    font-size: 20px;
+}
+.card-title, .card-image {
+    text-align: center;
+}
+.card-image {
+    margin-top: 30px;
+}
+.card {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+}
+.card-list_info ul {
+    padding: 0;
+    margin-top: 30px;
+    min-height: 355px;
+}
+.card-list_info ul li {
+    list-style: none;
+    text-align: left;
+    padding-bottom: 16px;
+    padding-top: 13px;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    font-family: MullerLight;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-list_info ul li span {
+    text-align: right;
+    font-family: MullerBold;
+}
+.card-cost p {
+    font-family: MullerLight;
+    text-align: center;
+    line-height: 30px;
+}
+.card-cost p span {
+    font-family: MullerBold;
+    font-size: 24px;
+}
+.section-price_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 920px;
+}
+.card-buttons form {
+    text-align: center;
+}
+.card-buttons button {
+    max-width: 220px;
+}
+  

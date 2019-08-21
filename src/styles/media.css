@@ -3,19 +3,33 @@
         margin-right: 15px;
     }
 }
+
+@media (max-width: 930px) {
+    #price .section-price_wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #price .section-price_wrap div:nth-child(3) {
+        grid-column: 1/3;
+    }
+}
+
 @media (max-width: 920px) {
     header ul li {
         margin-right: 5px;
     }
 }
+
 @media (max-width: 900px) {
     #apps .section-apps_wrap {
         grid-template-columns: 1fr;
     }
+
     #apps .section-apps_download {
         text-align: center;
     }
 }
+
 @media (max-width: 870px) {
     #about .section-about_wrap {
         grid-template-columns: 1fr 1fr;
@@ -56,8 +70,9 @@
     #first {
         padding-top: 60px;
     }
-    
+
 }
+
 @media(min-width: 861px) {
     header .header-content_top {
         position: fixed;
@@ -74,6 +89,7 @@
         background-color: #fff;
         z-index: 999;
     }
+
     header .header-content_bottom {
         margin-top: 70px;
     }
@@ -96,18 +112,38 @@
         grid-column: 1/3;
         margin-top: 40px;
     }
+
+    #price .choose-card {
+        flex-direction: column;
+    }
+
+    #price .tabs-card {
+        margin-top: 20px;
+    }
 }
+
+@media (max-width: 670px) {
+    #price .section-price_wrap {
+        grid-template-columns: 1fr;
+    }
+    #price .section-price_wrap div:nth-child(3) {
+        grid-column: 1;
+    }
+}
+
 @media(max-width: 655px) {
     #comments .section-comments_wrap ul {
         display: block;
         padding: 0;
     }
+
     #comments .section-comments_wrap ul li {
         margin-top: 35px;
         display: inline-block;
         text-align: center;
     }
 }
+
 @media (max-width: 620px) {
     #advantage .section-advantage_wrap .advantage-cards {
         grid-template-columns: 1fr 1fr;
@@ -162,11 +198,13 @@
         padding-right: 0;
     }
 }
+
 @media (max-width: 446px) {
     .section-apps_download img {
         margin-top: 20px;
     }
 }
+
 @media (max-width: 360px) {
     #first .section-first_wrap h1 {
         font-size: 28px;
